@@ -1,0 +1,134 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+  }
+
+
+.header {
+  background-color: #006EF5;
+  color: white;
+  display: flex;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  margin: 15px;
+}
+
+.article {
+  font-size: 36px;
+}
+
+.title{
+  font-size: 18px;
+  margin: 0;
+
+}
+
+.smallscreenTitle{
+  display: none;
+}
+
+.navmenu {
+  overflow: hidden;
+  background-color: #004EAE;
+}
+
+.navmenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.navmenu a:hover {
+  background-color:#013371;
+  color:#FFC700;
+}
+
+.navmenu a.active {
+  background-color: #013371;
+  color: #FFC700;
+}
+
+a.icon { 
+  display: none;
+}
+
+.page-content {
+  display: flex;
+  padding: 20px;
+}
+
+.content{
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.content a {
+  color: #CC4B00;
+  text-decoration: underline;
+}
+
+.container-fluid > .row {
+  margin-top: 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+  h1 {display: none}
+  .logo-container{
+    width: 100%;
+  }
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navmenu {display: none;}
+
+  .navmenu.responsive {
+    display: block;
+    position: relative;
+  }
+   a.icon {
+    display: block;
+    position: absolute;
+    fill: white;
+    left: 20px;
+    top: 3%;
+    /* // I want to fix 3% top */
+  }
+  .navmenu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navmenu.responsive li:not(:last-child) {
+    border-width: 0px 0px 2px 0px;
+    border-color: #006EF5;
+    border-style: solid;
+  }
+  .page-content{
+    display: block
+  }
+  .content{
+    margin-left: 0px;
+  }
+}
+
