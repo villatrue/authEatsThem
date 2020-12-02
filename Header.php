@@ -9,7 +9,7 @@
     <div class="header">
         
         <div class="logo-container">
-            <a href="javascript:void(0);" class="icon" onclick="showNav()">
+            <a href="javascript:void(0);" id="icon" class="icon" onclick="showNav()">
                 <svg class="hamburgerMenu" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                     <path id="here" d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                 </svg>
@@ -31,16 +31,19 @@
     <script>
         function showNav() {
             var x = document.getElementById("myTopnav");
-            var y = document.getElementById("fullscreenTitle");
+            var y = document.getElementById('icon')
             var z = document.getElementById('here')
+            
             
             if (x.className === "navmenu") { 
                 x.className += " responsive";
                 z.setAttribute("d",
                     "M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
                 )
+                y.className = " icon-x";
             } else {
                 x.className = "navmenu";
+                y.className = "icon";
                 z.setAttribute("d", "M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z")
             }
         }

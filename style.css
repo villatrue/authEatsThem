@@ -184,9 +184,17 @@ a.icon {
     display: block;
     position: absolute;
     fill: white;
-    left: 20px;
-    /* // I want to fix 3% top */
+    padding: 20px;
   }
+
+  a.icon-x {
+    display: block;
+    position: absolute;
+    fill: white;
+    padding: 20px;
+    background-color:#004EAE;
+  }
+
 
   .navmenu.responsive a {
     float: none;
