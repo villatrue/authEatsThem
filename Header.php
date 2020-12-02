@@ -15,7 +15,7 @@
                 </svg>
             </a>
             <a class="logo" href="<?php echo get_home_url(); ?>">
-            <img class="logo" src="<?php echo get_bloginfo('template_url') ?>/Images/logo.svg" alt="Eats Logo"/>   
+                <img class="logo" src="<?php echo get_bloginfo('template_url') ?>/Images/logo.svg" alt="Eats Logo"/>   
             </a>  
                 
                 <h1 class="title" id="title">
@@ -26,15 +26,13 @@
         
     </div>
     <div class="navmenu" id="myTopnav">
-    <?php wp_nav_menu(); ?>
+        <?php wp_nav_menu(); ?>
     </div>
     <script>
         function showNav() {
             var x = document.getElementById("myTopnav");
             var y = document.getElementById('icon')
             var z = document.getElementById('here')
-            
-            
             if (x.className === "navmenu") { 
                 x.className += " responsive";
                 z.setAttribute("d",
@@ -54,8 +52,5 @@
             $('.navmenu a[href="'+url+'"]').addClass('active');
         });
     </script>
-    
-    
     </body>
-
 </html>
