@@ -2,6 +2,12 @@
 
 <?php
 
+add_action( 'init', 'register_my_menu' );
+
+function register_my_menu() {
+	register_nav_menu( 'primary-menu', __( 'Primary Menu' ) );
+}
+
 function remove_img_attr ($html)
 {
     return preg_replace('/(width|height)="\d+"\s/', "", $html);

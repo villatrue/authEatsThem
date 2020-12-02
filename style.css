@@ -35,7 +35,7 @@ p {
 
 .logo {
   width: 40px;
-  margin: 15px;
+  margin: 7.5px;
 }
 
 .post-title {
@@ -51,6 +51,11 @@ p {
 .title{
   font-size: 18px;
   margin: 0;
+  color: white
+}
+
+h1#title {
+  color: white;
 }
 
 .smallscreenTitle{

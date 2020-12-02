@@ -5,7 +5,6 @@
     <!-- why isnt this working??? -->
     <div class="page-content">
     <div class="responsive-sammich">
-        
         <?php the_post_thumbnail('full', array('class' => 'responsive-sammich')); ?>
     </div>
     <div class="content">
