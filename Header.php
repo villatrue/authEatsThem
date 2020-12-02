@@ -45,6 +45,12 @@
             }
         }
     </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($){
+            var url = window.location.href;
+            $('.navmenu a[href="'+url+'"]').addClass('active');
+        });
+    </script>
     
     
     </body>

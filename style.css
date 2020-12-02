@@ -13,9 +13,24 @@ body {
     color: #333333;
   }
 
-h1, h2, h3, h3, h5, h6{
-  font-size: 36px
+a {
+  color: #CC4B00;
+  padding: 0%;
 }
+
+a.post-title {
+  line-height: 1;
+}
+
+/* a svg {
+  fill: #CC4B00
+} */
+
+h1, h2, h3, h3, h5, h6{
+  font-size: 36px;
+  line-height: 1
+}
+  /* either fix this here or at post-title */
 
 p {
   font-size: 14px
@@ -31,6 +46,8 @@ p {
 .logo-container {
   display: flex;
   align-items: center;
+  padding: 0 0 0 20px;
+
 }
 
 .logo {
@@ -41,23 +58,25 @@ p {
 
 .post-title {
   font-size: 36px;
-  color: #CC4B00
+  color: #CC4B00;
+  line-height: 1;
 }
 
 .meta-date {
   color: #767676;
   font-size: 14px;
+  margin-bottom: 0;
+  margin-top: revert;
 }
 
 .title{
   font-size: 18px;
   margin: 0;
-  color: white
+  color: white;
+  margin-left: 10px;
 }
 
-h1#title {
-  color: white;
-}
+
 
 .smallscreenTitle{
   display: none;
@@ -74,6 +93,11 @@ h1#title {
   padding: 0;
 }
 
+.navmenu a:first-child {
+  padding: 15px 20px 15px 40px;
+}
+
+
 .navmenu a {
   float: left;
   display: block;
@@ -85,12 +109,15 @@ h1#title {
   text-decoration: underline;
 }
 
+
+
 .navmenu a:hover {
   background-color:#013371;
   color:#FFC700;
 }
 
 .navmenu a.active {
+
   background-color: #013371;
   color: #FFC700;
 }
@@ -101,13 +128,14 @@ a.icon {
 
 .page-content {
   display: flex;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .responsive-sammich {
     width: 100%;
     max-width: 100%;
     height: auto;
+    /* padding: 0px 0px 0px 20px; */
 }
 
 .content{
@@ -118,6 +146,11 @@ a.icon {
 .content a {
   color: #CC4B00;
   text-decoration: underline;
+}
+
+.read-more{
+  display: flex;
+  align-items: center
 }
 
 .container-fluid > .row {
@@ -132,6 +165,7 @@ a.icon {
 
   .logo-container{
     width: 100%;
+    padding: 0px
   }
 
   .logo {
@@ -165,10 +199,15 @@ a.icon {
     border-style: solid;
   }
   .page-content{
-    display: block
+    display: block;
+    padding: 20px;
   }
   .content{
     margin-left: 0px;
   }
+
+  /* .responsive-sammich {
+    padding: 0;
+} */
 }
 
