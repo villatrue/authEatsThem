@@ -36,6 +36,7 @@ p {
 .logo {
   width: 40px;
   margin: 7.5px;
+  /* super hacky will finish with more sleep */
 }
 
 .post-title {

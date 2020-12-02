@@ -1,10 +1,11 @@
 # Auth Eats Theme
 ## Action items:
 
-* Make the menu actually work with Wordpress 
+* Change the left margin on the picture to 40px when it is on full screen
 * Fix the svg next to the read more link
 * Tweak font
-* Add Boilerplate html
+* Create logic for active class on current page being browsed
+* sleep
 
 ## Stretch
 
