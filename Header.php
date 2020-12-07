@@ -11,7 +11,7 @@
         <div class="logo-container">
             <a href="javascript:void(0);" id="icon" class="icon" onclick="showNav()">
                 <svg class="hamburgerMenu" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                    <path id="here" d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    <path id="menu-icon-path" d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                 </svg>
             </a>
             <a class="logo" href="<?php echo get_home_url(); ?>">
@@ -32,7 +32,7 @@
         function showNav() {
             var x = document.getElementById("myTopnav");
             var y = document.getElementById('icon')
-            var z = document.getElementById('here')
+            var z = document.getElementById('menu-icon-path')
             if (x.className === "navmenu") { 
                 x.className += " responsive";
                 z.setAttribute("d",
